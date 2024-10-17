@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 500px;
+      background-color: #fff;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 0 auto; /* Center the container horizontally */
+    }
+
+    h3 {
+      text-align: center;
+      color: #333;
+    }
+
+    form{
+      text-align: center;
+    }
+
+    label {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 22px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"],input[type="reset"] {
+      background-color: #9c27b0;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover,input[type="reset"]:hover {
+      background-color: #9c27dd;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="upload.html#section1" target="content" class="back"><img src='icons/back.svg' alt='Icon' class='icon'></a>
+
+    <h3>Recherche par mots clés</h3>
+
+    <form action="backend/search.php" method="POST" id='form'>
+      <label for="keywords">Mots clés:</label>
+      <input type="text" name="keyword">
+      <br><br>
+      <input type="submit" value="Envoyer">
+      <input type="reset" value="Effacer">
+    </form>
+  </div>
+</body>
+</html>
